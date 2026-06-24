@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pokemon Random Intro"
+  short_description: "Random Pokemon profile from PokeAPI"
+  default_prompt: "Use $pokemon-random-intro to introduce a random Pokemon in zh-tw."
