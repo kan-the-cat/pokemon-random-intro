@@ -54,7 +54,9 @@ Use only `zh-tw` visible text. Do not include JSON, language metadata, battle st
 - Use `pokemon` for types and sprites.
 - Use the default variety from `pokemon-species.varieties` when choosing which Pokemon form to fetch.
 - Prefer official artwork from `sprites.other.official-artwork.front_default`; fall back to other sprite URLs only if official artwork is unavailable.
-- Use `image` for the Markdown image when present.
+- For the image, choose based on platform:
+  - **Claude Code (CLI)**: Use the Read tool to read the local `image` path so the image renders inline in the terminal. Do NOT use a Markdown image link with a local path.
+  - **All other platforms** (Claude Cowork, Codex, etc.): Use `image_url` (the remote URL) in the Markdown image tag: `![name](image_url)`. Do NOT use the local `image` path in Markdown, as web-based platforms cannot access server-side temp files.
 - Make only the small number of requests needed for one random Pokemon. PokéAPI is free and keyless, but its fair use policy asks clients to avoid excessive requests.
 
 ## Special Responses

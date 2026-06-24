@@ -296,6 +296,7 @@ def build_profile(species_ref: str | None = None) -> dict[str, Any]:
         "flavor_text": flavor,
         "flavor_text_language": flavor_language,
         "flavor_text_needs_translation": normalize_language(flavor_language) == "en",
+        "image_url": image_url,
         "image": download_image(image_url, species.get("name") or "pokemon") if image_url else None,
         "opening_lines": special.get("opening_lines", ["嗶⋯⋯嗶嗶⋯⋯"]),
         "closing_line": special.get("closing_line"),
