@@ -1,6 +1,6 @@
 ---
 name: pokemon-random-intro
-description: Fetch and introduce one random Pokemon from PokeAPI. Use when the user invokes this skill or asks to randomly pick a Pokemon and present a playful zh-tw-only capture message with image, name, type, Pokedex flavor text, and evolution chain.
+description: Fetch and introduce one random Pokemon from PokeAPI. Use only when the user explicitly invokes this skill as $pokemon-random-intro or directly requests this exact skill. Do not invoke implicitly during general Pokemon, PokéAPI, image, writing, translation, coding, or work tasks.
 ---
 
 # Pokemon Random Intro
